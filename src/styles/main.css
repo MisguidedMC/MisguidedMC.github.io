@@ -27,3 +27,21 @@
 :root[data-theme="light"] .contribution-day[data-level="2"],:root[data-theme="light"] .contribution-legend i[data-level="2"]{background:#54b9aa}
 :root[data-theme="light"] .contribution-day[data-level="3"],:root[data-theme="light"] .contribution-legend i[data-level="3"]{background:#218b7e}
 :root[data-theme="light"] .contribution-day[data-level="4"],:root[data-theme="light"] .contribution-legend i[data-level="4"]{background:#006c64}
+.cv-viewer{overflow:hidden;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.cv-viewer iframe{display:block;width:100%;height:min(82vh,900px);min-height:620px;border:0;background:#fff}
+.cv-note{margin:12px 0 0;font-size:.8125rem}
+.cv-zip>summary{display:flex;align-items:center;gap:15px;width:max-content;max-width:100%;min-height:58px;padding:10px 18px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--text);font-size:.9375rem;font-weight:650;cursor:pointer;list-style:none}
+.cv-zip>summary::-webkit-details-marker{display:none}
+.cv-zip>summary::marker{content:""}
+.cv-zip>summary:hover{border-color:var(--accent)}
+.cv-zip>summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.cv-zip-opened,.cv-zip[open] .cv-zip-closed{display:none}
+.cv-zip[open] .cv-zip-opened{display:inline}
+.cv-zipper{position:relative;display:block;width:32px;height:28px;flex:0 0 32px}
+.cv-zipper-track{position:absolute;left:14px;top:2px;height:24px;border-left:2px dashed var(--accent)}
+.cv-zipper-pull{position:absolute;left:9px;top:4px;width:12px;height:11px;border:2px solid var(--accent);border-radius:3px;background:var(--surface);transition:transform .45s ease}
+.cv-zipper-pull::after{position:absolute;left:3px;top:7px;width:2px;height:11px;background:var(--accent);content:""}
+.cv-zip[open] .cv-zipper-pull{transform:translateY(13px) rotate(8deg)}
+.cv-viewer{margin-top:20px}
+@media(max-width:760px){.cv-viewer iframe{height:72vh;min-height:500px}}
+@media(prefers-reduced-motion:reduce){.cv-zipper-pull{transition:none}}

@@ -4,6 +4,7 @@ await mkdir('dist/assets', { recursive: true });
 await writeFile('dist/index.html', renderPage());
 for (const [source, destination] of [
   ['src/styles/main.css', 'main.css'], ['src/main.js', 'main.js'],
-  ['public/portrait-000.jpg', 'portrait.jpg'], ['public/favicon.svg', 'favicon.svg']
+  ['public/portrait-000.jpg', 'portrait.jpg'], ['public/favicon.svg', 'favicon.svg'],
+  ['public/cv.pdf', 'cv.pdf']
 ]) await copyFile(source, `dist/assets/${destination}`);
 console.log('Built portfolio into dist/');
