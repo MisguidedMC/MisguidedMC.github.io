@@ -1,0 +1,13 @@
+{
+  "name": "pranay-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pranay Deep Singh's accessible, dependency-free portfolio",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
