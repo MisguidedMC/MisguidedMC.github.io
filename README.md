@@ -43,4 +43,4 @@ Run `npm run build` and deploy the contents of `dist/` to any static host. Use `
 
 ## GitHub Pages deployment
 
-The portfolio is configured for [https://misguidedmc.github.io](https://misguidedmc.github.io/). The GitHub Actions workflow in `.github/workflows/pages.yml` builds the site, runs `npm run check`, and deploys only `dist/` to GitHub Pages. Push source changes to the repository's `main` branch to automatically update the website. You can also start a deployment manually from the repository's **Actions** tab using **Deploy portfolio to GitHub Pages**. The project has no package dependencies, so the workflow does not install packages.
+The portfolio is live at [https://misguidedmc.github.io](https://misguidedmc.github.io/). The GitHub Actions workflow in `.github/workflows/pages.yml` builds the site, runs `npm run check`, and deploys only `dist/` to GitHub Pages. Push source changes to the repository's `main` branch to automatically update the website. You can also start a deployment manually from the repository's **Actions** tab using **Deploy portfolio to GitHub Pages**. The project has no package dependencies, so the workflow does not install packages.
