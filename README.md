@@ -33,7 +33,7 @@ Use ES modules, descriptive names, camelCase for functions and variables, kebab-
 
 Biography, education, certifications, previous internship and portrait were taken from the supplied CV. APRC responsibilities were supplied directly by Pranay. Repository names and primary languages were checked using GitHub's public API on 4 October 2026. Descriptions are conservative summaries, not claims that repository implementations were audited. Code in the project card previews is illustrative decoration, not excerpts from the repositories.
 
-The CV is revealed in an embedded preview when visitors open the accessible “Unzip my CV to view” disclosure. It is served as `assets/cv.pdf`; there is no separate download link or button. Because it is part of a public static website, visitors can still access the PDF through their browser or its public asset URL. Do not include personal information in a CV you are not comfortable publishing publicly.
+The CV is revealed in an embedded preview when visitors open the accessible “Unzip my CV to view” disclosure. It is served as `assets/cv.pdf` with a content-hash query so browsers fetch a fresh copy when the PDF changes; there is no separate download link or button. Because it is part of a public static website, visitors can still access the PDF through their browser or its public asset URL. Do not include personal information in a CV you are not comfortable publishing publicly.
 
 The CV is embedded without a separate download link or download button. Since the PDF is part of a public static website, visitors can still save it through their browser or access its public asset URL; browser viewer controls cannot prevent that.
 

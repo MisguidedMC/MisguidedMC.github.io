@@ -11,7 +11,7 @@ assert.match(html, /<img src="assets\/portrait\.jpg"/);
 assert.match(html, /<link rel="icon" href="assets\/favicon\.svg"/);
 assert.match(html, /id="cv"/);
 assert.match(html, /<details class="cv-zip"><summary>/);
-assert.match(html, /<iframe src="assets\/cv\.pdf#toolbar=0&amp;navpanes=0"/);
+assert.match(html, /<iframe src="assets\/cv\.pdf\?v=[a-f0-9]{12}#toolbar=0&amp;navpanes=0"/);
 assert.match(html, /Unzip my CV to view/);
 assert(!html.includes(' download=') && !html.includes('>Download CV<'));
 await access('dist/assets/cv.pdf');
